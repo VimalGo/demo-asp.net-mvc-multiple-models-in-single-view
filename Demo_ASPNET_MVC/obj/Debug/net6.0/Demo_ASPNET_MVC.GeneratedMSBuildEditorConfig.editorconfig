@@ -1,0 +1,80 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Demo_ASPNET_MVC
+build_property.RootNamespace = Demo_ASPNET_MVC
+build_property.ProjectDir = F:\My Data\My Projects\5.Practice Projects\demo-asp.net-mvc-multiple-models-in-single-view\Demo_ASPNET_MVC\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\My Data\My Projects\5.Practice Projects\demo-asp.net-mvc-multiple-models-in-single-view\Demo_ASPNET_MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/MultipleModelsInSingleView/MultipleModelsInSingleView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGlwbGVNb2RlbHNJblNpbmdsZVZpZXdcTXVsdGlwbGVNb2RlbHNJblNpbmdsZVZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/MultipleModelsInSingleView/RenderDepartmentPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGlwbGVNb2RlbHNJblNpbmdsZVZpZXdcUmVuZGVyRGVwYXJ0bWVudFBhcnRpYWxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/MultipleModelsInSingleView/RenderEmployeePartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGlwbGVNb2RlbHNJblNpbmdsZVZpZXdcUmVuZGVyRW1wbG95ZWVQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/MultipleModelsInSingleView/UsingDynamicModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGlwbGVNb2RlbHNJblNpbmdsZVZpZXdcVXNpbmdEeW5hbWljTW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/MultipleModelsInSingleView/UsingRenderActionMethodAndPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGlwbGVNb2RlbHNJblNpbmdsZVZpZXdcVXNpbmdSZW5kZXJBY3Rpb25NZXRob2RBbmRQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/MultipleModelsInSingleView/UsingTuple.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGlwbGVNb2RlbHNJblNpbmdsZVZpZXdcVXNpbmdUdXBsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/MultipleModelsInSingleView/UsingViewBag.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGlwbGVNb2RlbHNJblNpbmdsZVZpZXdcVXNpbmdWaWV3QmFnLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/MultipleModelsInSingleView/UsingViewData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGlwbGVNb2RlbHNJblNpbmdsZVZpZXdcVXNpbmdWaWV3RGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/MultipleModelsInSingleView/UsingViewModels.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGlwbGVNb2RlbHNJblNpbmdsZVZpZXdcVXNpbmdWaWV3TW9kZWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/My Data/My Projects/5.Practice Projects/demo-asp.net-mvc-multiple-models-in-single-view/Demo_ASPNET_MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3sha4tcvzq

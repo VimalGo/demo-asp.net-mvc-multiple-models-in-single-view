@@ -1,0 +1,24 @@
+﻿@using Demo_ASPNET_MVC; 
+@model IEnumerable<Demo_ASPNET_MVC.Models.Department>;
+
+<table>
+    <thead>
+        <tr>
+            <td>Department Id</td>
+            <td>Depart Code</td>
+            <td>Depart Name</td>
+            <td>Is Active</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Department dept in Model)
+        {
+            <tr>
+                <td>@dept.DepartmentId</td>
+                <td>@dept.DeptCode</td>
+                <td>@dept.DeptName</td>
+                <td>@dept.IsActive</td>
+            </tr>
+        }
+    </tbody>
+</table>

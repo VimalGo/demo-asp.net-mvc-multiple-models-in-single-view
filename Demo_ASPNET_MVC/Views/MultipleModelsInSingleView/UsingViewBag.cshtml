@@ -1,0 +1,138 @@
+﻿@{
+    ViewData["Title"] = "Using ViewBag";
+}
+
+<h1>Using ViewBag</h1>
+
+<h4>Results</h4>
+
+<table>
+    <thead>
+        <tr>
+            <td>Department Id</td>
+            <td>Depart Code</td>
+            <td>Depart Name</td>
+            <td>Is Active</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Department dept in ViewBag.Departments)
+        {
+            <tr>
+                <td>@dept.DepartmentId</td>
+                <td>@dept.DeptCode</td>
+                <td>@dept.DeptName</td>
+                <td>@dept.IsActive</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<br />
+<br />
+
+<table>
+    <thead>
+        <tr>
+            <td>Employee Id</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Dept Id</td>
+            <td>Is Active</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Employee emp in ViewBag.Employees)
+        {
+            <tr>
+                <td>@emp.EmployeeId</td>
+                <td>@emp.FirstName</td>
+                <td>@emp.LastName</td>
+                <td>@emp.DeptId</td>
+                <td>@emp.IsActive</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+<br />
+<br />
+
+<h4>C# Code</h4>
+<pre>
+<code>
+        public IActionResult UsingViewBag()
+        {
+            DepartmentHelper deptHelper = new DepartmentHelper();
+            EmployeeHelper empHelper = new EmployeeHelper();
+
+            ViewBag.Departments = deptHelper.GetDepartments();
+            ViewBag.Employees = empHelper.GetEmployees();
+
+            return View();
+        }
+    </code>
+</pre>
+
+<br />
+<br />
+
+<h4>HTML View Code</h4>
+<pre>
+<code>
+
+        &lt;table&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Department Id&lt;/td&gt;
+                    &lt;td&gt;Depart Code&lt;/td&gt;
+                    &lt;td&gt;Depart Name&lt;/td&gt;
+                    &lt;td&gt;Is Active&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                @@foreach (Department dept in ViewBag.Departments)
+                {
+                    &lt;tr&gt;
+                        &lt;td&gt;@@dept.DepartmentId&lt;/td&gt;
+                        &lt;td&gt;@@dept.DeptCode&lt;/td&gt;
+                        &lt;td&gt;@@dept.DeptName&lt;/td&gt;
+                        &lt;td&gt;@@dept.IsActive&lt;/td&gt;
+                    &lt;/tr&gt;
+                }
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+
+
+        &lt;br /&gt;
+        &lt;br /&gt;
+
+        &lt;table&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Employee Id&lt;/td&gt;
+                    &lt;td&gt;First Name&lt;/td&gt;
+                    &lt;td&gt;Last Name&lt;/td&gt;
+                    &lt;td&gt;Dept Id&lt;/td&gt;
+                    &lt;td&gt;Is Active&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                @@foreach (Employee emp in ViewBag.Employees)
+                {
+                    &lt;tr&gt;
+                        &lt;td&gt;@@emp.EmployeeId&lt;/td&gt;
+                        &lt;td&gt;@@emp.FirstName&lt;/td&gt;
+                        &lt;td&gt;@@emp.LastName&lt;/td&gt;
+                        &lt;td&gt;@@emp.DeptId&lt;/td&gt;
+                        &lt;td&gt;@@emp.IsActive&lt;/td&gt;
+                    &lt;/tr&gt;
+                }
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+
+    </code>
+</pre>

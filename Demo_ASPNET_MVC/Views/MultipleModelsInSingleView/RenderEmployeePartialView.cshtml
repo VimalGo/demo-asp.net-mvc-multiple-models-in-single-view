@@ -1,0 +1,26 @@
+﻿@using Demo_ASPNET_MVC; 
+@model IEnumerable<Demo_ASPNET_MVC.Models.Employee>
+
+<table>
+    <thead>
+        <tr>
+            <td>Employee Id</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Dept Id</td>
+            <td>Is Active</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Employee emp in Model)
+        {
+            <tr>
+                <td>@emp.EmployeeId</td>
+                <td>@emp.FirstName</td>
+                <td>@emp.LastName</td>
+                <td>@emp.DeptId</td>
+                <td>@emp.IsActive</td>
+            </tr>
+        }
+    </tbody>
+</table>

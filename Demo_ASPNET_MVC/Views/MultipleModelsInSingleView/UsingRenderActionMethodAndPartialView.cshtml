@@ -1,0 +1,127 @@
+﻿@{
+    ViewData["Title"] = "Using RenderAction Method And PartialView";
+}
+
+<h1>Using RenderAction Method And PartialView</h1>
+
+<h4>Results</h4>
+
+<div>
+    <partial name="RenderDepartmentPartialView" for="Department"></partial>
+    @{
+        //Html.RenderPartial("RenderDepartmentPartialView");
+        //<partial name="RenderDepartmentPartialView"></partial>
+        <br />
+        <br />
+        //Html.RenderPartial("RenderEmployeePartialView");
+        //<partial name="RenderEmployeePartialView"></partial>
+    }
+</div>
+
+<br />
+<br />
+
+<h4>C# Code</h4>
+<pre>
+<code>
+        public IActionResult UsingRenderActionMethodAndPartialView()
+        {
+            return View();
+        }
+
+        public PartialViewResult RenderDepartmentPartialView()
+        {
+            DepartmentHelper deptHelper = new DepartmentHelper();
+            return PartialView(deptHelper.GetDepartments());
+        }
+
+        public PartialViewResult RenderEmployeePartialView()
+        {
+            EmployeeHelper empHelper = new EmployeeHelper();
+            return PartialView(empHelper.GetEmployees());
+        }
+    </code>
+</pre>
+
+<br />
+<br />
+
+<h4>HTML View Code (Main View)</h4>
+<pre>
+<code>
+
+        &lt;div&gt;
+            @@{
+                Html.RenderPartial("RenderDepartmentPartialView");
+                &lt;br /&gt;
+                &lt;br /&gt;
+                Html.RenderPartial("RenderEmployeePartialView");
+            }
+        &lt;/div&gt;
+
+    </code>
+</pre>
+
+<h4>HTML View Code (Department Partial View)</h4>
+<pre>
+<code>
+
+        @@model IEnumerable&lt;Demo_ASPNET_MVC.Models.Department&gt;
+
+        &lt;table&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Department Id&lt;/td&gt;
+                    &lt;td&gt;Depart Code&lt;/td&gt;
+                    &lt;td&gt;Depart Name&lt;/td&gt;
+                    &lt;td&gt;Is Active&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                @@foreach (Department dept in Model)
+                {
+                    &lt;tr&gt;
+                        &lt;td&gt;@@dept.DepartmentId&lt;/td&gt;
+                        &lt;td&gt;@@dept.DeptCode&lt;/td&gt;
+                        &lt;td&gt;@@dept.DeptName&lt;/td&gt;
+                        &lt;td&gt;@@dept.IsActive&lt;/td&gt;
+                    &lt;/tr&gt;
+                }
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+
+    </code>
+</pre>
+
+<h4>HTML View Code (Employee Partial View)</h4>
+<pre>
+<code>
+
+        @@model IEnumerable&lt;Demo_ASPNET_MVC.Models.Employee&gt;
+
+        &lt;table&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Employee Id&lt;/td&gt;
+                    &lt;td&gt;First Name&lt;/td&gt;
+                    &lt;td&gt;Last Name&lt;/td&gt;
+                    &lt;td&gt;Dept Id&lt;/td&gt;
+                    &lt;td&gt;Is Active&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                @@foreach (Employee emp in Model)
+                {
+                    &lt;tr&gt;
+                        &lt;td&gt;@@emp.EmployeeId&lt;/td&gt;
+                        &lt;td&gt;@@emp.FirstName&lt;/td&gt;
+                        &lt;td&gt;@@emp.LastName&lt;/td&gt;
+                        &lt;td&gt;@@emp.DeptId&lt;/td&gt;
+                        &lt;td&gt;@@emp.IsActive&lt;/td&gt;
+                    &lt;/tr&gt;
+                }
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+
+    </code>
+</pre>
